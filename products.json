@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Keyboard",
+    "price": 1200,
+    "stock": 12
+  },
+  {
+    "id": 2,
+    "name": "Mouse",
+    "price": 450,
+    "stock": 3
+  },
+  {
+    "id": 3,
+    "name": "USB Cable",
+    "price": 250,
+    "stock": 5
+  },
+  {
+    "id": 4,
+    "name": "Monitor",
+    "price": 8500,
+    "stock": 8
+  },
+  {
+    "id": 5,
+    "name": "Headphone",
+    "price": 1800,
+    "stock": 2
+  }
+]
