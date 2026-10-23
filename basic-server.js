@@ -1,11 +1,17 @@
+
 const http = require("node:http");
 
 const server = http.createServer((req, res) => {
-  if (req.method === "GET" && req.url === "/products") {
-    res.statusCode = 200;
-    res.end("Products Page");
+  res.setHeader("Content-Type", "text/plain");
+
+  if (req.method === "GET" && req.url === "/") {
+    res.writeHead(200);
+    res.end("Welcome page");
+  } else if (req.method === "GET" && req.url === "/about") {
+    res.writeHead(200);
+    res.end("About Page");
   } else {
-    res.statusCode = 404;
+    res.writeHead(404);
     res.end("Page Not Found");
   }
 });
